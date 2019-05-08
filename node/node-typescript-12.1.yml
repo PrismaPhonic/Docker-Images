@@ -2,13 +2,6 @@ version: '3.3'
 
 services:
 
-  builder:
-    image: prismaphonic/node-typescript:12.1-builder
-    build:
-      context: ./builder
-      args:
-        - NODE_BASE_IMAGE=node:12.1.0-alpine
-        
   base:
     image: prismaphonic/node-typescript:12.1
     build:
